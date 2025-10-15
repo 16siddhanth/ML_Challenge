@@ -1,0 +1,128 @@
+2025-10-12 19:27:15,741 | INFO | root | Starting load-datasets
+2025-10-12 19:27:20,915 | INFO | root | train shape: (75000, 4)
+2025-10-12 19:27:20,927 | INFO | root | train memory usage: 117.70 MB
+2025-10-12 19:27:20,927 | INFO | root | test shape: (75000, 3)
+2025-10-12 19:27:20,938 | INFO | root | test memory usage: 116.93 MB
+2025-10-12 19:27:20,938 | INFO | root | Finished load-datasets in 5.20 seconds
+2025-10-12 19:27:20,938 | INFO | root | Starting preprocess-and-cache
+2025-10-12 19:33:07,872 | INFO | root | Starting load-datasets
+2025-10-12 19:33:09,342 | INFO | root | train shape: (75000, 4)
+2025-10-12 19:33:09,358 | INFO | root | train memory usage: 117.70 MB
+2025-10-12 19:33:09,358 | INFO | root | test shape: (75000, 3)
+2025-10-12 19:33:09,369 | INFO | root | test memory usage: 116.93 MB
+2025-10-12 19:33:09,369 | INFO | root | Finished load-datasets in 1.50 seconds
+2025-10-12 19:33:09,369 | INFO | root | Starting preprocess-and-cache
+2025-10-12 19:33:10,353 | INFO | root | Text statistics saved to /Users/siddhanthpradhan/Coding projects/ml challenge/reports/eda_summary.json
+2025-10-12 19:33:10,356 | INFO | root | Missing value summary for train saved to /Users/siddhanthpradhan/Coding projects/ml challenge/reports/missing_summary.json
+2025-10-12 19:33:10,356 | INFO | root | Price stats: {'iqr_lower': 0.0, 'iqr_upper': 61.37, 'z_score_outlier_pct': 1.6199999999999999, 'median_price': 14.0, 'mean_price': 23.647654, 'min_price': 0.13, 'max_price': 2796.0}
+2025-10-12 19:33:10,356 | INFO | root | Text stats keys: ['catalog_content_char_mean', 'catalog_content_char_std', 'catalog_content_char_p95', 'catalog_content_word_mean', 'catalog_content_word_std', 'catalog_content_word_p95']
+2025-10-12 19:33:10,356 | INFO | root | Missing stats keys: ['sample_id', 'catalog_content', 'image_link', 'price', 'price_bin']
+2025-10-12 19:33:10,357 | INFO | root | Finished preprocess-and-cache in 0.99 seconds
+2025-10-12 19:35:50,571 | INFO | root | Starting load-datasets
+2025-10-12 19:35:51,741 | INFO | root | train shape: (75000, 4)
+2025-10-12 19:35:51,752 | INFO | root | train memory usage: 117.70 MB
+2025-10-12 19:35:51,753 | INFO | root | test shape: (75000, 3)
+2025-10-12 19:35:51,765 | INFO | root | test memory usage: 116.93 MB
+2025-10-12 19:35:51,765 | INFO | root | Finished load-datasets in 1.19 seconds
+2025-10-12 19:35:51,765 | INFO | root | Starting preprocess-and-cache
+2025-10-12 19:35:52,757 | INFO | root | Text statistics saved to /Users/siddhanthpradhan/Coding projects/ml challenge/reports/eda_summary.json
+2025-10-12 19:35:52,762 | INFO | root | Missing value summary for train saved to /Users/siddhanthpradhan/Coding projects/ml challenge/reports/missing_summary.json
+2025-10-12 19:35:52,762 | INFO | root | Price stats: {'iqr_lower': 0.0, 'iqr_upper': 61.37, 'z_score_outlier_pct': 1.6199999999999999, 'median_price': 14.0, 'mean_price': 23.647654, 'min_price': 0.13, 'max_price': 2796.0}
+2025-10-12 19:35:52,762 | INFO | root | Text stats keys: ['catalog_content_char_mean', 'catalog_content_char_std', 'catalog_content_char_p95', 'catalog_content_word_mean', 'catalog_content_word_std', 'catalog_content_word_p95']
+2025-10-12 19:35:52,762 | INFO | root | Missing stats keys: ['sample_id', 'catalog_content', 'image_link', 'price', 'price_bin']
+2025-10-12 19:35:52,770 | INFO | root | Finished preprocess-and-cache in 1.01 seconds
+2025-10-12 19:36:45,793 | INFO | root | Starting feature-engineering
+2025-10-12 19:36:45,793 | INFO | root | Deriving structured text features from catalog content
+2025-10-12 19:36:52,165 | INFO | root | Deriving structured text features from catalog content
+2025-10-12 19:38:07,254 | INFO | root | Starting feature-engineering
+2025-10-12 19:38:07,254 | INFO | root | Deriving structured text features from catalog content
+2025-10-12 19:38:13,640 | INFO | root | Deriving structured text features from catalog content
+2025-10-12 19:38:45,299 | INFO | root | Finished feature-engineering in 38.05 seconds
+2025-10-12 19:39:07,154 | INFO | root | Starting train-gbm
+2025-10-12 19:39:07,163 | INFO | root | Training GBM fold 1
+2025-10-12 19:40:20,850 | INFO | root | Fold 1 SMAPE: 52.297
+2025-10-12 19:40:20,872 | INFO | root | Training GBM fold 2
+2025-10-12 19:41:53,507 | INFO | root | Fold 2 SMAPE: 52.416
+2025-10-12 19:41:53,535 | INFO | root | Training GBM fold 3
+2025-10-12 19:43:47,779 | INFO | root | Fold 3 SMAPE: 52.591
+2025-10-12 19:43:47,809 | INFO | root | Training GBM fold 4
+2025-10-12 19:45:34,913 | INFO | root | Fold 4 SMAPE: 52.512
+2025-10-12 19:45:34,941 | INFO | root | Training GBM fold 5
+2025-10-12 19:47:22,261 | INFO | root | Fold 5 SMAPE: 52.053
+2025-10-12 19:47:22,290 | INFO | root | GBM CV SMAPE: 52.374
+2025-10-12 19:47:22,365 | INFO | root | Finished train-gbm in 495.21 seconds
+2025-10-12 19:47:22,365 | WARNING | root | Dense embeddings not available; skipping neural network model
+2025-10-12 19:47:22,366 | INFO | root | Validation metrics stored at /Users/siddhanthpradhan/Coding projects/ml challenge/models/cv_metrics.json
+2025-10-12 19:51:22,055 | INFO | root | Starting ensemble
+2025-10-12 19:51:22,206 | INFO | root | Weight search best combo 1.00-0.00-0.00 with blended score 52.374
+2025-10-12 19:57:15,411 | INFO | root | Starting train-gbm
+2025-10-12 19:57:15,419 | INFO | root | Training GBM fold 1
+2025-10-12 19:58:27,695 | INFO | root | Fold 1 SMAPE: 52.297
+2025-10-12 19:58:27,718 | INFO | root | Training GBM fold 2
+2025-10-12 19:59:54,440 | INFO | root | Fold 2 SMAPE: 52.416
+2025-10-12 19:59:54,469 | INFO | root | Training GBM fold 3
+2025-10-12 20:01:39,642 | INFO | root | Fold 3 SMAPE: 52.591
+2025-10-12 20:01:39,670 | INFO | root | Training GBM fold 4
+2025-10-12 20:03:23,087 | INFO | root | Fold 4 SMAPE: 52.512
+2025-10-12 20:03:23,116 | INFO | root | Training GBM fold 5
+2025-10-12 20:05:06,443 | INFO | root | Fold 5 SMAPE: 52.053
+2025-10-12 20:05:06,471 | INFO | root | GBM CV SMAPE: 52.374
+2025-10-12 20:05:06,540 | INFO | root | Finished train-gbm in 471.13 seconds
+2025-10-12 20:05:06,540 | WARNING | root | Dense embeddings not available; skipping neural network model
+2025-10-12 20:05:06,541 | INFO | root | Validation metrics stored at /Users/siddhanthpradhan/Coding projects/ml challenge/models/cv_metrics.json
+2025-10-12 20:17:59,928 | INFO | root | Starting ensemble
+2025-10-12 20:18:00,051 | INFO | root | Weight search best combo 1.00-0.00-0.00 with blended score 52.374
+2025-10-12 20:18:10,171 | INFO | root | Finished ensemble in 10.24 seconds
+2025-10-12 20:18:10,171 | INFO | root | Ensemble validation SMAPE: 52.374
+2025-10-12 20:18:10,171 | INFO | root | Ensemble weights: {'gbm': 1.0, 'transformer': 0.0, 'nn': 0.0}
+2025-10-12 20:22:03,915 | INFO | root | Starting ensemble
+2025-10-12 20:22:04,025 | INFO | root | Weight search best combo 1.00-0.00-0.00 with blended score 52.374
+2025-10-12 20:22:13,544 | INFO | root | Finished ensemble in 9.63 seconds
+2025-10-12 20:22:13,544 | INFO | root | Ensemble validation SMAPE: 52.374
+2025-10-12 20:22:13,544 | INFO | root | Ensemble weights: {'gbm': 1.0, 'transformer': 0.0, 'nn': 0.0}
+2025-10-12 20:22:13,666 | INFO | root | Submission saved to /Users/siddhanthpradhan/Coding projects/ml challenge/outputs/test_out.csv
+2025-10-12 20:22:13,674 | INFO | root | Submission generated at /Users/siddhanthpradhan/Coding projects/ml challenge/outputs/test_out.csv
+2025-10-12 21:06:40,176 | INFO | root | Starting ensemble
+2025-10-12 21:06:40,347 | INFO | root | Weight search best combo 1.00-0.00-0.00 with blended score 52.374
+2025-10-12 21:06:50,396 | INFO | root | Finished ensemble in 10.22 seconds
+2025-10-12 21:06:50,397 | INFO | root | Ensemble validation SMAPE: 52.374
+2025-10-12 21:06:50,397 | INFO | root | Ensemble weights: {'gbm': 1.0, 'transformer': 0.0, 'nn': 0.0}
+2025-10-12 21:06:50,529 | INFO | root | Submission saved to /Users/siddhanthpradhan/Coding projects/ml challenge/outputs/test_out.csv
+2025-10-12 21:06:50,538 | INFO | root | Submission generated at /Users/siddhanthpradhan/Coding projects/ml challenge/outputs/test_out.csv
+2025-10-12 21:31:14,915 | INFO | root | Starting ensemble
+2025-10-12 21:31:15,082 | INFO | root | Weight search best combo 1.00-0.00-0.00 with blended score 52.374
+2025-10-12 22:11:25,456 | INFO | root | Starting ensemble
+2025-10-12 22:11:25,622 | INFO | root | Weight search best combo 1.00-0.00-0.00 with blended score 52.374
+2025-10-12 22:11:35,296 | INFO | root | Finished ensemble in 9.84 seconds
+2025-10-12 22:11:35,297 | INFO | root | Ensemble validation SMAPE: 52.374
+2025-10-12 22:11:35,297 | INFO | root | Ensemble weights: {'gbm': 1.0, 'transformer': 0.0, 'nn': 0.0}
+2025-10-12 22:11:35,422 | INFO | root | Submission saved to /Users/siddhanthpradhan/Coding projects/ml challenge/outputs/test_out.csv
+2025-10-12 22:11:35,431 | INFO | root | Submission generated at /Users/siddhanthpradhan/Coding projects/ml challenge/outputs/test_out.csv
+2025-10-12 22:12:11,992 | INFO | root | Starting load-datasets
+2025-10-12 22:12:13,449 | INFO | root | train shape: (75000, 4)
+2025-10-12 22:12:13,464 | INFO | root | train memory usage: 117.70 MB
+2025-10-12 22:12:13,464 | INFO | root | test shape: (75000, 3)
+2025-10-12 22:12:13,475 | INFO | root | test memory usage: 116.93 MB
+2025-10-12 22:12:13,475 | INFO | root | Finished load-datasets in 1.48 seconds
+2025-10-12 22:12:13,475 | INFO | root | Starting preprocess-and-cache
+2025-10-12 22:12:14,484 | INFO | root | Text statistics saved to /Users/siddhanthpradhan/Coding projects/ml challenge/reports/eda_summary.json
+2025-10-12 22:12:14,488 | INFO | root | Missing value summary for train saved to /Users/siddhanthpradhan/Coding projects/ml challenge/reports/missing_summary.json
+2025-10-12 22:12:14,488 | INFO | root | Price stats: {'iqr_lower': 0.0, 'iqr_upper': 61.37, 'z_score_outlier_pct': 1.6199999999999999, 'median_price': 14.0, 'mean_price': 23.647654, 'min_price': 0.13, 'max_price': 2796.0}
+2025-10-12 22:12:14,488 | INFO | root | Text stats keys: ['catalog_content_char_mean', 'catalog_content_char_std', 'catalog_content_char_p95', 'catalog_content_word_mean', 'catalog_content_word_std', 'catalog_content_word_p95']
+2025-10-12 22:12:14,488 | INFO | root | Missing stats keys: ['sample_id', 'catalog_content', 'image_link', 'price', 'price_bin']
+2025-10-12 22:12:14,490 | INFO | root | Finished preprocess-and-cache in 1.01 seconds
+2025-10-12 22:12:53,923 | INFO | root | Starting feature-engineering
+2025-10-12 22:12:53,923 | INFO | root | Deriving structured text features from catalog content
+2025-10-12 22:13:00,429 | INFO | root | Deriving structured text features from catalog content
+2025-10-12 22:14:30,244 | INFO | root | Starting feature-engineering
+2025-10-12 22:14:30,245 | INFO | root | Deriving structured text features from catalog content
+2025-10-12 22:14:36,660 | INFO | root | Deriving structured text features from catalog content
+2025-10-12 22:15:47,699 | INFO | root | Starting feature-engineering
+2025-10-12 22:15:47,699 | INFO | root | Deriving structured text features from catalog content
+2025-10-12 22:15:54,209 | INFO | root | Deriving structured text features from catalog content
+2025-10-12 22:16:28,629 | INFO | sentence_transformers.SentenceTransformer | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-10-12 22:19:39,305 | INFO | sentence_transformers.SentenceTransformer | Use pytorch device: cpu
+2025-10-12 23:34:35,614 | WARNING | root | Image download failed (1/3): 404 Client Error: Not Found for url: https://m.media-amazon.com/images/I/51mjZYDYjyL.jpg
+2025-10-12 23:34:36,640 | WARNING | root | Image download failed (2/3): 404 Client Error: Not Found for url: https://m.media-amazon.com/images/I/51mjZYDYjyL.jpg
+2025-10-12 23:34:38,161 | WARNING | root | Image download failed (3/3): 404 Client Error: Not Found for url: https://m.media-amazon.com/images/I/51mjZYDYjyL.jpg
+2025-10-12 23:34:38,161 | ERROR | root | Image download ultimately failed: https://m.media-amazon.com/images/I/51mjZYDYjyL.jpg

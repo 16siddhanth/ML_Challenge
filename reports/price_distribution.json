@@ -1,0 +1,9 @@
+{
+  "iqr_lower": 0.0,
+  "iqr_upper": 61.37,
+  "z_score_outlier_pct": 1.6199999999999999,
+  "median_price": 14.0,
+  "mean_price": 23.647654,
+  "min_price": 0.13,
+  "max_price": 2796.0
+}
